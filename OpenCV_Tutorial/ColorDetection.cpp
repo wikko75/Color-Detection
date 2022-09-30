@@ -27,15 +27,6 @@ int main()
 		return 1;
 	}
 	
-	
-	/*namedWindow("TrackBars", (640,200));
-	createTrackbar("HueMin", "TrackBars", &hMin, 179);
-	createTrackbar("HueMax", "TrackBars", &hMax, 179);
-	createTrackbar("SaturationMin", "TrackBars", &sMin, 255);
-	createTrackbar("SaturationMax", "TrackBars", &sMax, 255);
-	createTrackbar("ValueMin", "TrackBars", &vMin, 255);
-	createTrackbar("ValueMax", "TrackBars",&vMax, 255);*/
-
 	createTrackBarsWindow("TrackBars", (640,200), &hMax, &hMin, &sMax, &sMin, &vMax, &vMin);
 	
 	Mat frame;
